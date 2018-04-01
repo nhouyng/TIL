@@ -1,5 +1,4 @@
 # Android Grammar
-***
 ### directory 생성
 dir 생성을 위해 manifests.xml에 아래 코드를 추가하는데
 ```xml
