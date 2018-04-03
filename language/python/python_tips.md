@@ -1,6 +1,7 @@
 # Python tips
 ### setted key
 - pycharm 컴파일 && 실행 : alt + shift + f10
+- pycharm 현재 .py 시랳ㅇ : ctrl + shift + f10
 - pycharm 실행 : shift + f10
 - pycharm 자동 정렬 단축키 : alt + ctrl + i
 ---
@@ -12,9 +13,23 @@ str = input()
 # 형변환을 통해 정수형 입력을 수행
 num = int(input())
 ```
+1. 간격(' ')을 가진 가로식 input
+```python
+# 3 4
+a, b = map(int, input().split())
+```
 ---
 - print
 'print(변수)'를 통해 출력한다. 배열도 변수 부분에 넣고 출력하면 모든 인덱스에 대한 값이 나옴
+1. 괄호[] 벗기고 출력
+```Python
+print(*s)
+```
+2. 괄호[] 벗기고 매 index마다 개행 출력
+원하는 문자간 개행, 간격, 문자열은 sep파라미터를 통해 전달.
+```python
+print(*s, sep='\n')
+```
 ---
 - 함수 정의
 def 함수이름(매개변수):
@@ -41,4 +56,21 @@ arr[i], arr[index] = arr[index], arr[i]
 array = []
 for i in range(length):
     array.append(int(input()));
+```
+---
+- 중복 요소 제거
+1. 배열을 set을 통해 다시 list로 반환 받는방식
+```python
+l = ['a','a','a']
+l = list(set(l))
+```
+---
+- list 정렬 (sort)
+1. 오름차순으로 정렬
+```python
+a.sort()
+```
+2. 문자열 길이 정렬
+```python
+a.sort(key=len)
 ```
