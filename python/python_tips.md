@@ -1,7 +1,7 @@
 # Python tips
 ### setted key
 - pycharm 컴파일 && 실행 : alt + shift + f10
-- pycharm 현재 .py 시랳ㅇ : ctrl + shift + f10
+- pycharm 현재 .py 실행 : ctrl + shift + f10
 - pycharm 실행 : shift + f10
 - pycharm 자동 정렬 단축키 : alt + ctrl + i
 ---
