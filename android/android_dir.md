@@ -1,4 +1,4 @@
-# Android Grammar
+# Android Directory
 ### directory 생성
 dir 생성을 위해 manifests.xml에 아래 코드를 추가하는데
 ```xml
@@ -19,6 +19,7 @@ File file = new File(dirPath);
 ```
 ***
 ### 텍스트(.txt) 파일 쓰기
+이어서 파일 내용을 추가할때
 ```java
 public void writeTextFile(String filename, String contents){
         try{
@@ -34,6 +35,18 @@ public void writeTextFile(String filename, String contents){
         }
 
     }
+```
+파일 내용을 덮어씌우고 싶다면
+```java
+public void writeTextFile(String contents) {
+    try {
+        FileWriter fw = new FileWriter(dirPath +"/"+fileName);
+        fw.write(contents);
+        fw.close();
+    } catch (Exception e) {
+        Log.v("writeTextFile ERROR", e.toString());
+    }
+}
 ```
 ***
 ### 텍스트(.txt) 파일 읽기
