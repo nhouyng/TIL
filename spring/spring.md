@@ -45,3 +45,15 @@ prefix와 suffix를 자동으로 붙여 jsp의 전체 경로를 붙이지 않게
 ```xml
 <context:component-scan base-package="com.nhouyng.web01" />
 ```
+---
+### Service
+Service 영역은 두개의 파일로 구성된다. Service 인터페이스와 이 인터페이스를 실제로 구현한 ServiceImpl 클래스로 구성된다. 이는 Spring의 IoC/DI(Inversion of Control / Dependency Injection) 기능을 이용한 Bean 관리 기능을 사용하기 위함이다 ??????
+
+---
+# Anotation
+### @Controller
+컨트롤러(Controller)는 웹 클라이언트에서 들어온 요청을 해당 비지니스 로직으로 호출하고, 수행결과와 함께 응답해주는 Dispatcher 역할을 한다.
+### @RequestMapping
+RequestMapping은 요청 URL을 의미한다.
+
+---
