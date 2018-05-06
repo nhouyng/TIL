@@ -42,6 +42,7 @@
   <appender-ref ref="console"/>
 </logger>
 ```
+
 3. log4j bean 추가
 프로젝트와 DB를 연동하는 xml에 bean을 추가한다.
 ```xml
